@@ -5,20 +5,20 @@
 class Kapi < Formula
   desc "A Go-based interactive TUI CLI for project scaffolding"
   homepage "https://github.com/slouowzee/kapi"
-  version "1.0.0-beta.2"
+  version "1.0.0-beta.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.2/KAPI_darwin_amd64.tar.gz"
-      sha256 "0f15a82697433cfbbf12e87b6d893d605bbab033697bb0062c937efefbb0c3e1"
+      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.3/KAPI_darwin_amd64.tar.gz"
+      sha256 "c36df21a7cce719f8249c51e26d1f86ea68ae5b8634e9c726712ea19b76ac1de"
 
       def install
         bin.install "kapi"
       end
     end
     on_arm do
-      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.2/KAPI_darwin_arm64.tar.gz"
-      sha256 "63e6510d6282a083e59ea053a5353ce13806887069151e9c51389c86cf810e89"
+      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.3/KAPI_darwin_arm64.tar.gz"
+      sha256 "3d5ffbab3846a768cd6a130ed895e066a21e4ac41b0792aa6df8484f6a4e9f1c"
 
       def install
         bin.install "kapi"
@@ -29,8 +29,8 @@ class Kapi < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.2/KAPI_linux_amd64.tar.gz"
-        sha256 "96c7d541c35d9898f4aec2aff02d3b9c63f78fe0af3b50ceaba64a7921b6688c"
+        url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.3/KAPI_linux_amd64.tar.gz"
+        sha256 "b7fd3715ae3312a45d55c5805e1a69a953aad55a99fd635e9ed93cfb4aaa7e4c"
 
         def install
           bin.install "kapi"
@@ -39,8 +39,8 @@ class Kapi < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.2/KAPI_linux_arm64.tar.gz"
-        sha256 "abe90b3c2baf02394226dc6b9e64617e3aeab05fe565790adb8867cf2c8d73f4"
+        url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.3/KAPI_linux_arm64.tar.gz"
+        sha256 "65306861e774a96ef1c1ff1d6bfb38b60205691d1efae6ba2218005dfaf2d89c"
 
         def install
           bin.install "kapi"
