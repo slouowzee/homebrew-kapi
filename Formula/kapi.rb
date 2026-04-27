@@ -5,20 +5,20 @@
 class Kapi < Formula
   desc "A Go-based interactive TUI CLI for project scaffolding"
   homepage "https://github.com/slouowzee/kapi"
-  version "1.0.0-beta.7"
+  version "1.0.0-beta.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.7/KAPI_darwin_amd64.tar.gz"
-      sha256 "0e3a5ad65733f05252f12d0b40c003ab7b935a6dab85b5d3cd59455e96a8c01e"
+      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.8/KAPI_darwin_amd64.tar.gz"
+      sha256 "326f9cd6328e219439725d2d379a267163311c8798e5d5937df58096c2aaa0b8"
 
       define_method(:install) do
         bin.install "kapi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.7/KAPI_darwin_arm64.tar.gz"
-      sha256 "37e4d7906597bd154b80b3d3595d40d60b30bf25f16a9824207de34f8e51fa72"
+      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.8/KAPI_darwin_arm64.tar.gz"
+      sha256 "b6e06fef562acebdcd470a9b250aadd6d0fe71a95f29f315f99d22f188cbc351"
 
       define_method(:install) do
         bin.install "kapi"
@@ -28,15 +28,15 @@ class Kapi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.7/KAPI_linux_amd64.tar.gz"
-      sha256 "db93e42e0de45ea27b5374f0e4ab30a92dc8610eae08b521f12e1673f995cc1f"
+      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.8/KAPI_linux_amd64.tar.gz"
+      sha256 "a5f58cb539a9d5a3cdc1a384741a95eda4d025dab94e90861a9200ee0e886378"
       define_method(:install) do
         bin.install "kapi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.7/KAPI_linux_arm64.tar.gz"
-      sha256 "d7403c49a97f13b73a40d10374b24e684a2c1fce14602ec9d3cf1e999b47f333"
+      url "https://github.com/slouowzee/KAPI/releases/download/v1.0.0-beta.8/KAPI_linux_arm64.tar.gz"
+      sha256 "def26272ed9a22adbf9316b03306696f97c1688bc041b4205cacfea30a6b1789"
       define_method(:install) do
         bin.install "kapi"
       end
