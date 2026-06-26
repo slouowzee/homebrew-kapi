@@ -10,7 +10,7 @@ class Kapi < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/slouowzee/KAPI/releases/download/v1.2.0-beta.1/KAPI_darwin_amd64.tar.gz"
-      sha256 "850222b15d954803f1a7c9ac57a426735d4efb6fc7a6a7adaafb116a2709f450"
+      sha256 "152071591804adb9317eed2c04c5b2cecba79740607f56de94fa094128d3521b"
 
       define_method(:install) do
         bin.install "kapi"
@@ -18,7 +18,7 @@ class Kapi < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/slouowzee/KAPI/releases/download/v1.2.0-beta.1/KAPI_darwin_arm64.tar.gz"
-      sha256 "1ccf0151041428a4c4b08c78bdb68008cd1edf11d214313566d23718669d2ead"
+      sha256 "d599e9c700e0dc212ad15cbc6efacab91d9e0f8ee55c934f4e6a56683649d6eb"
 
       define_method(:install) do
         bin.install "kapi"
@@ -29,14 +29,14 @@ class Kapi < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/slouowzee/KAPI/releases/download/v1.2.0-beta.1/KAPI_linux_amd64.tar.gz"
-      sha256 "e3fd99ad6176552a62f6ca8b18167685b60e1598f9a6066f4b73e56b8ae67e35"
+      sha256 "cee15ea6a9f0103c294b344431254be203b1fada122c6f6779a3f6c90a6e9a70"
       define_method(:install) do
         bin.install "kapi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/slouowzee/KAPI/releases/download/v1.2.0-beta.1/KAPI_linux_arm64.tar.gz"
-      sha256 "bbe29030db045d1af7ccb08df0896d1680a12529b974e0cd7fadb492220e4770"
+      sha256 "9d2bfd1e75125876b28ef608e36a002ce31b36c1ec6f68cbe4c934148a22dcd1"
       define_method(:install) do
         bin.install "kapi"
       end
