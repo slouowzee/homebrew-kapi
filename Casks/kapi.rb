@@ -4,21 +4,21 @@ cask "kapi" do
 
   on_macos do
     on_arm do
-      sha256 "2ac267ddfd4b013552ff902ef2e49533d64e2f802d4d23d79c6f93a1185f2b04"
+      sha256 "65ca6270b3a4da159958c0792abcf83bd7de244913dcfd46403e527799b5eb0e"
       url "https://github.com/slouowzee/KAPI/releases/download/v#{version}/KAPI_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "23fc6fc9470454f9f15aea4bea5551cc8b81bfd7746c58c0e05496e1614bb768"
+      sha256 "b6aa5df0ddbd2400d7991ad9217dea93cfc23d6c0a6543fd1a4b8320b1037d90"
       url "https://github.com/slouowzee/KAPI/releases/download/v#{version}/KAPI_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "ac5ae7e513a28a6343d70c01c5829d901e59b9f97d360eeb5ff3853b70a61b02"
+      sha256 "9cad7335f1ce2df348652614d87e966b565833d5ee342a7be6ac6b1669f3b23b"
       url "https://github.com/slouowzee/KAPI/releases/download/v#{version}/KAPI_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "85531289b05a013077c41fc60079d34549f7d7de69c41f47e8c58012ea308137"
+      sha256 "8987cf75944dcdefc120945d90b789235070cfd95363d191d568f79f77bfef01"
       url "https://github.com/slouowzee/KAPI/releases/download/v#{version}/KAPI_linux_amd64.tar.gz"
     end
   end
